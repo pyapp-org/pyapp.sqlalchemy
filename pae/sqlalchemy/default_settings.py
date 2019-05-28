@@ -1,0 +1,4 @@
+DATABASE = {"default": {}}
+"""
+Database credentials
+"""

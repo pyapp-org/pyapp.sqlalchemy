@@ -22,7 +22,7 @@ class EngineFactory(NamedSingletonFactory[Engine]):
     Factory that creates SQLAlchemy engine instances from configuration.
     """
 
-    required_keys = ("uri",)
+    required_keys = ("url",)
     optional_keys = (
         "connect_args",
         "echo",
@@ -38,8 +38,8 @@ class EngineFactory(NamedSingletonFactory[Engine]):
         """
         Obtain an engine
         """
-        definition = self.get(name)
-        engine = create_engine(definition.pop("uri"), **definition)
+        config = self.get(name)
+        engine = create_engine(config.pop("url"), **config)
         return engine
 
     def check_definition(self, config_definitions, name, **_):
@@ -64,7 +64,7 @@ class EngineFactory(NamedSingletonFactory[Engine]):
         return messages
 
 
-engine_factory = EngineFactory("DB_ENGINES")
+engine_factory = EngineFactory("DATABASE_ENGINES")
 get_engine = engine_factory.create
 
 

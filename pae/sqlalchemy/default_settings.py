@@ -1,12 +1,12 @@
-DB_ENGINES = None
+DATABASE_ENGINES = None
 """
 SQLAlchemy engine connection settings
 
 Example settings::
 
-    DB_ENGINES = {
+    DATABASE_ENGINES = {
         "default": {
-            "uri": "engine://user:password@host/database",
+            "url": "driver://user:password@host/database",
             "connect_args": {
                 # Engine specific args
             }

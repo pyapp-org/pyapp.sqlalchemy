@@ -1,3 +1,9 @@
+"""
+PyApp - SQLAlchemy Extension
+
+This extension provides a factory method for connecting to a SQL RDBMS.
+
+"""
 from pyapp.versioning import get_installed_version
 
 from .factory import *

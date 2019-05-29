@@ -49,9 +49,9 @@ Add the `DATABASE_ENGINES` block into your runtime settings file::
 .. note::
 
     The URI is a defined by SQLAlchemy see the
-    `documentation <http://example.com/>`_. In addition to the url any
-    argument that can be provided to `sqlalchemy.engines.create_engine` can
-    be provided.
+    `documentation <https://docs.sqlalchemy.org/en/13/core/engines.html>`_. In addition to
+    the url any argument that can be provided to `sqlalchemy.engines.create_engine` can be
+    provided.
 
 
 Usage
@@ -65,12 +65,11 @@ The following example creates both `Connection` and `Session` instances::
     cnn = get_connection()
 
     # Get connection from an alternate pool
-    session - get_session("Alternate")
+    session = get_session("Alternate")
 
 
 API
 ===
-
 
 `pae.sqlalchemy.get_engine(default: str = None) -> Engine`
 

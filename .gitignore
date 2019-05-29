@@ -1,3 +1,7 @@
 __pycache__
 .idea
 .python-version
+.egg-info
+.eggs
+pyApp_SQLAlchemy.egg-info
+dist

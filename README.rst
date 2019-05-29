@@ -8,6 +8,10 @@ pyApp - SQLAlchemy
    :target: https://github.com/ambv/black
       :alt: Once you go Black...
 
+.. image:: https://api.codeclimate.com/v1/badges/0a86755f39f0416fbd1e/test_coverage
+   :target: https://codeclimate.com/github/pyapp-org/pae.sqlalchemy/test_coverage
+   :alt: Test Coverage
+
 This extension provides a `Connection` and `Session` factory for SQLAlchemy to
 allow database connections to be configured via pyApp settings. 
 
@@ -70,19 +74,19 @@ API
 
 `pae.sqlalchemy.get_engine(default: str = None) -> Engine`
 
-Get named `Engine` instance (singleton)
+    Get named `Engine` instance (singleton)
 
 
 `pae.sqlalchemy.get_connection(default: str = None) -> Connection`
 
-Get named `Connection` instance.
+    Get named `Connection` instance.
 
 
 `pae.sqlalchemy.get_raw_connection(default: str = None)`
 
-Get named *raw* connection, this is the underlying Python DBAPI object.
+    Get named *raw* connection, this is the underlying Python DBAPI object.
 
 
 `pae.sqlalchemy.get_session(default: str = None) -> Session`
 
-Get named `Session` instance.
+    Get named `Session` instance.

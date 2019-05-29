@@ -8,9 +8,9 @@ pyApp - SQLAlchemy
    :target: https://github.com/ambv/black
       :alt: Once you go Black...
 
-.. image:: https://api.codeclimate.com/v1/badges/0a86755f39f0416fbd1e/test_coverage
-   :target: https://codeclimate.com/github/pyapp-org/pae.sqlalchemy/test_coverage
-   :alt: Test Coverage
+.. image:: https://api.codeclimate.com/v1/badges/0a86755f39f0416fbd1e/maintainability
+   :target: https://codeclimate.com/github/pyapp-org/pae.sqlalchemy/maintainability
+   :alt: Maintainability
 
 This extension provides a `Connection` and `Session` factory for SQLAlchemy to
 allow database connections to be configured via pyApp settings. 

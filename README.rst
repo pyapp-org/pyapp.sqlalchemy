@@ -27,14 +27,14 @@ Installation
 
 Install using *pip*::
 
-    pip install pae.sqlalchemy
+    pip install pyapp-sqlalchemy
 
 Install using *pipenv*::
 
-    pipenv install pae.sqlalchemy
+    pipenv install pyapp-sqlalchemy
 
 
-Add `pae.sqlalchemy` into the `EXT` list in your applications 
+Add `pyapp_ext.sqlalchemy` into the `EXT` list in your applications
 `default_settings.py`.
 
 Add the `DATABASE_ENGINES` block into your runtime settings file::
@@ -59,7 +59,7 @@ Usage
 
 The following example creates both `Connection` and `Session` instances::
 
-    from pae.sql_alchemy import get_connection, get_session
+    from pyapp_ext.sqlalchemy import get_connection, get_session
 
     # Get connection from default connection pool
     cnn = get_connection()
@@ -71,21 +71,21 @@ The following example creates both `Connection` and `Session` instances::
 API
 ===
 
-`pae.sqlalchemy.get_engine(default: str = None) -> Engine`
+`pyapp_ext.sqlalchemy.get_engine(default: str = None) -> Engine`
 
     Get named `Engine` instance (singleton)
 
 
-`pae.sqlalchemy.get_connection(default: str = None) -> Connection`
+`pyapp_ext.sqlalchemy.get_connection(default: str = None) -> Connection`
 
     Get named `Connection` instance.
 
 
-`pae.sqlalchemy.get_raw_connection(default: str = None)`
+`pyapp_ext.sqlalchemy.get_raw_connection(default: str = None)`
 
     Get named *raw* connection, this is the underlying Python DBAPI object.
 
 
-`pae.sqlalchemy.get_session(default: str = None) -> Session`
+`pyapp_ext.sqlalchemy.get_session(default: str = None) -> Session`
 
     Get named `Session` instance.

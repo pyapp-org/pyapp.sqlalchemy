@@ -12,6 +12,7 @@ __all__ = (
     "get_connection",
     "get_raw_connection",
     "get_session",
+    "Engine",
     "Connection",
     "Session",
 )

@@ -34,9 +34,6 @@ Install using *pipenv*::
     pipenv install pyapp-sqlalchemy
 
 
-Add `pyapp_ext.sqlalchemy` into the `EXT` list in your applications
-`default_settings.py`.
-
 Add the `DATABASE_ENGINES` block into your runtime settings file::
 
     DATABASE_ENGINES = {

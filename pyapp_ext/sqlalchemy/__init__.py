@@ -11,5 +11,6 @@ class Extension:
     """
     pyApp SQLAlchemy Extension
     """
+
     default_settings = ".default_settings"
     checks = ".checks"
